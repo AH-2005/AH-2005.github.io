@@ -4,7 +4,8 @@ My web development aspirations and what I've learnt so far
 <html lang="en">
   <head></head>
   <body>
-    <h1>Crust</h1>
+    <h2>My motivation to go into web development</h2>
+    <p>Growing up, I always felt that science was my <>niche<>.</p>
   </body>
 </html>
 
