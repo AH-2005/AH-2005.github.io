@@ -5,7 +5,7 @@
     <title>About me</title>
     <style>
       body {
-        color: blue;
+        background-color: blue;
       }
       p {
         color: black;
