@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -15,7 +14,7 @@
   <body>
     <h1>My Web Development Journey</h1>
     <h2>Changing Career Goals</h2>
-    <p></p>
+<p>Growing up, I had always been primarily interested in biology and so aspired to be a doctor or biologist.</p>
     <h2>Starting To Code</h2>
     <p></p>
     <h2>Where I Am Now</h2>
