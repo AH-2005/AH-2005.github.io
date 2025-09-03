@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head></head>
+  <head>
+    <meta charset="UTF-8">
+    <title>About me</title>
+    <style>
+      body {
+        color: blue;
+      }
+    </style>
+  </head>
   <body>
-    <h2>My motivation to go into web development</h2>
-    <p>Growing up, I always felt that science was my <i>niche</i>. My desire to become a doctor turned into a half-hearted interest in a career as a microbiologist, until, during a rocky term studying biochemistry at uni, I realised that I couldn't imagine myself feeling fulfilled as a biological scientist. My short stint at attempting GCSE Python years earlier had left me with an overall negative impression of computer science</p>
-    
+    <h1>My Web Development Journey</h1>
+    <h2>Changing Career Goals</h2>
+    <p></p>
+    <h2>Starting To Code</h2>
+    <p></p>
+    <h2>Where I Am Now</h2>
+    <p></p>
+    <ul>
+      <li>Mozilla website</li>
+      <li>Bro Code (YouTube)</li>
+      <li>Tech With Nader (YouTube)</li>
+    </ul>
   </body>
 </html>
 
