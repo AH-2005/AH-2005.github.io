@@ -7,6 +7,9 @@
       body {
         color: blue;
       }
+      p {
+        color: black;
+      }
     </style>
   </head>
   <body>
