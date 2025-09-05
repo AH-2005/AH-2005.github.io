@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <style><style>
+    <style></style>
   </head>
   <body></body>
 </html>
