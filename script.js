@@ -21,7 +21,7 @@ let activeCounter = 0;
     activeTask.priority = querySelector("#priorityLevel").value;
 
     let li = document.createElement("li")
-    li.innerText = activeTask.name;
+    li.innerHTML = activeTask;
     document.querySelector("#activeList").append(li);
   }
 })
