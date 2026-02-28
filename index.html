@@ -1,15 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>About me</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <style>
-      p {
-        color: red;
+      #field {
+        background-color: rgb(128,128,128);
+        border-radius: 10px;  
+        border-width: 5px;
+        border-style: solid;
+        border-color: black:
       }
     </style>
   </head>
+  
   <body>
-    <p>crust</p>
+    <h1>Task Management Dashboard</h1>
+    
+      <label for="priority">Sort by priority:</label>
+      <select name="priority" id="priority">
+        <option value="high">High Priority</option>
+        <option value="medium">Medium Priority</option>
+        <option value="low">Low Priority</option>
+      </select><br>
+<div>
+  <p id="activeCounter"></p>
+    <ul id="activeList"></ul>
+  <p id="completeCounter"></p>
+    <ul id="completeList"></ul>
+</div>
+    <form>
+    <fieldset id="field">
+    <input type="text" placeholder="Task Title" id="titleField" name="title_field"><br>
+      <input id ="description" type="text" placeholder="Description (optional)"><br>
+      <label for="dateField">Due Date</label>
+    <input type="text" placeholder="XX/XX/XX" id="dateField" name="date_field"><br>
+      <label for="#priorityLevel">Priority Level</label>
+      <select name="priorityLevel" id="priorityLevel">
+      <option data-background-color="#e74c3c" id="high">High</option> 
+      <option data-background-color="#f39c12" id="medium">Medium</option>
+      <option data-background-color="#3498db" id="low">Low</option>
+      </select><br><br>
+      <input id="addTask" type="submit" value ="Add Task">  
+    </fieldset>
+    </form>
   </body>
 </html>
