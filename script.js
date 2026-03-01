@@ -14,7 +14,7 @@ let activeTasks = [];
 let activeCounter = 0;
 
 //Adding a task
-  document.querySelector("#addTask").onclick = function addTask () {
+  document.querySelector("#addTask").onclick = function() {
 
     //Creating a task object
   let activeTask = {}; 
@@ -23,9 +23,17 @@ let activeCounter = 0;
     activeTask.date = querySelector("#dateField").value;
     activeTask.priority = querySelector("#priorityLevel").value;
 
-    let li = document.createElement("li")
-    li.innerHTML = activeTask;
-    document.querySelector("#activeList").append(li);
+//let taskDiv = document.createElement("div") 
+   // taskDiv.append(document.createElement("p").innerText = activeTask.name)
+    
+activeTask.displayTask = function () {
+  return `${activeTask.name}`;
+}
+
+
+    //let li = document.createElement("li")
+    //li.innerHTML = activeTask;
+   // document.querySelector("#activeList").append(li);
     
     //Updating counter for active tasks
     activeCounter++;
