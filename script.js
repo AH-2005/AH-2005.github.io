@@ -17,20 +17,23 @@ let activeCounter = 0;
   document.querySelector("#addTask").onclick = function() {
 
     //Creating a task object
-  let activeTask = {}; 
-    activeTask.name = querySelector("#titleField").value;
-    activeTask.description = querySelector("#description").value;
-    activeTask.date = querySelector("#dateField").value;
-    activeTask.priority = querySelector("#priorityLevel").value;
+  let activeTask = {
+    name: querySelector("#titleField").value;
+    description: querySelector("#description").value;
+    date: querySelector("#dateField").value;
+    priority: querySelector("#priorityLevel").value;
+    get displayTask() {
+      return this.name;
+    }
 
+    document.createElement("div").innerHTML = activeTask.displayTask; 
+  }
 //let taskDiv = document.createElement("div") 
    // taskDiv.append(document.createElement("p").innerText = activeTask.name)
     
-activeTask.displayTask = function () {
-  return `${activeTask.name}`;
-}
 
-    displayTask();
+
+    
 
     //let li = document.createElement("li")
     //li.innerHTML = activeTask;
