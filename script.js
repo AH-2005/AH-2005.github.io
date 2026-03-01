@@ -30,6 +30,7 @@ activeTask.displayTask = function () {
   return `${activeTask.name}`;
 }
 
+    displayTask();
 
     //let li = document.createElement("li")
     //li.innerHTML = activeTask;
