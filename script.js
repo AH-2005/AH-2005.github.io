@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Disabling submit button by default
 document.querySelector("#addTask").disabled = true;
+  //Preventing creation of tasks with empty titles
   document.querySelector("#titleField").onkeyup = function () {
     if (!document.querySelector("#titleField").value.length > 0) {
       document.querySelector("#addTask").disabled = true;
