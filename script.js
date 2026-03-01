@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Disabling submit button by default
 document.querySelector("#addTask").disabled = true;
   document.querySelector("#titleField").onkeyup = function () {
     if (!document.querySelector("#titleField").value.length > 0) {
@@ -11,9 +12,10 @@ document.querySelector("#addTask").disabled = true;
 let activeTasks = [];
 let activeCounter = 0;
 
-
+//Adding a task
   document.querySelector("#addTask").onclick = function addTask () {
-    
+
+    //Creating a task object
   let activeTask = {}; 
     activeTask.name = querySelector("#titleField").value;
     activeTask.description = querySelector("#description").value;
@@ -23,7 +25,14 @@ let activeCounter = 0;
     let li = document.createElement("li")
     li.innerHTML = activeTask;
     document.querySelector("#activeList").append(li);
+    
+    //Updating counter for active tasks
     activeCounter++;
      document.querySelector("#activeCounter").innerHTML = activeCounter;
+  }
+  
+//Hiding and displaying tasks by priority
+  document.querySelector("#priority").onchange = function () {
+    
   }
 })
