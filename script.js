@@ -23,5 +23,7 @@ let activeCounter = 0;
     let li = document.createElement("li")
     li.innerHTML = activeTask;
     document.querySelector("#activeList").append(li);
+    activeCounter++;
+     document.querySelector("#activeCounter").innerHTML = activeCounter;
   }
 })
