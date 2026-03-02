@@ -18,20 +18,20 @@ let activeCounter = 0;
 
     //Creating a task object
     const title = querySelector("#titleField").value;
-    const description = querySelector("#description").value;
-    const date = querySelector("#dateField").value;
-    const priority = querySelector("#priorityLevel").value;
-  let activeTask = {
-    title: title,
-    description: description,
-    date: date,
-    priority: priority,
+    //const description = querySelector("#description").value;
+    //const date = querySelector("#dateField").value;
+    //const priority = querySelector("#priorityLevel").value;
+  //let activeTask = {
+    //title: title,
+    //description: description,
+    //date: date,
+    //priority: priority,
     //get displayTask() {
       //return this.name;
-    }
+    //}
 
   const taskCard = document.createElement("li");
-  taskCard.innerHTML = activeTask.title;
+  taskCard.innerHTML = title;
   document.querySelector("#activeList").append(taskCard)
     
   return false;
