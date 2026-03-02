@@ -22,10 +22,10 @@ let activeCounter = 0;
     const date = querySelector("#dateField").value;
     const priority = querySelector("#priorityLevel").value;
   let activeTask = {
-    title: title;
-    description: description;
-    date: date;
-    priority: priority;
+    title: title,
+    description: description,
+    date: date,
+    priority: priority,
     //get displayTask() {
       //return this.name;
     }
