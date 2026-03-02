@@ -17,11 +17,15 @@ let activeCounter = 0;
   document.querySelector("#addTask").onclick = function() {
 
     //Creating a task object
+    const title = querySelector("#titleField").value;
+    const description = querySelector("#description").value;
+    const date = querySelector("#dateField").value;
+    const priority = querySelector("#priorityLevel").value;
   let activeTask = {
-    title: querySelector("#titleField").value;
-    description: querySelector("#description").value;
-    date: querySelector("#dateField").value;
-    priority: querySelector("#priorityLevel").value;
+    title: title;
+    description: description;
+    date: date;
+    priority: priority;
     //get displayTask() {
       //return this.name;
     }
