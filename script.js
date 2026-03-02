@@ -33,6 +33,8 @@ let activeCounter = 0;
   const taskCard = document.createElement("li");
   taskCard.innerHTML = activeTask.title;
   document.querySelector("#activeList").append(taskCard)
+    
+  return false;
   //  document.createElement("div").innerHTML = activeTask.displayTask; 
   //}
 //let taskDiv = document.createElement("div") 
