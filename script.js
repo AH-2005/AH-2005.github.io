@@ -18,16 +18,19 @@ let activeCounter = 0;
 
     //Creating a task object
   let activeTask = {
-    name: querySelector("#titleField").value;
+    title: querySelector("#titleField").value;
     description: querySelector("#description").value;
     date: querySelector("#dateField").value;
     priority: querySelector("#priorityLevel").value;
-    get displayTask() {
-      return this.name;
+    //get displayTask() {
+      //return this.name;
     }
 
-    document.createElement("div").innerHTML = activeTask.displayTask; 
-  }
+  const taskCard = document.createElement("li");
+  taskCard.innerHTML = activeTask.title;
+  document.querySelector("#activeList").append(taskCard)
+  //  document.createElement("div").innerHTML = activeTask.displayTask; 
+  //}
 //let taskDiv = document.createElement("div") 
    // taskDiv.append(document.createElement("p").innerText = activeTask.name)
     
@@ -40,8 +43,8 @@ let activeCounter = 0;
    // document.querySelector("#activeList").append(li);
     
     //Updating counter for active tasks
-    activeCounter++;
-     document.querySelector("#activeCounter").innerHTML = activeCounter;
+   // activeCounter++;
+     //document.querySelector("#activeCounter").innerHTML = activeCounter;
   }
   
 //Hiding and displaying tasks by priority
