@@ -37,11 +37,12 @@ let activeCounter = 0;
   taskCardDiv.setAttribute("id", "taskCardDiv");
   taskCardLi.append(taskCardDiv);
 
-    return false;
+  
 
   const displayedTitle = document.createElement("h4");
   displayedtitle.innerHTML = title;
   taskCardDiv.append(displayedTitle);  
+    return false;
     
   const displayedDescription = document.createElement("p");
   displayedDescription.innerHTML = description;
