@@ -50,7 +50,8 @@ let activeCounter = 0;
   taskCardDiv.append(displayedDate);
 
     taskCardLi.append(taskCardDiv);
-
+    
+//Preventing default submission of form 
     return false;
   
   //  document.createElement("div").innerHTML = activeTask.displayTask; 
