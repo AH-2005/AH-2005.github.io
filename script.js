@@ -14,7 +14,7 @@ let activeTasks = [];
 let activeCounter = 0;
 
 //Adding a task
-  document.querySelector("#form").onsubmit = function() {
+  document.querySelector("form").onsubmit = function() {
 
     //Creating a task object
     const title = document.querySelector("#titleField").value;
