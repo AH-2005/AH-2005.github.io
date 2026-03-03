@@ -30,7 +30,7 @@ let activeCounter = 0;
       //return this.name;
     //
     
-
+return false;
   const taskCardLi = document.createElement("li");
   const taskCardDiv = document.createElement("div");
   taskCardDiv.setAttribute("id", "taskCardDiv");
@@ -54,7 +54,7 @@ let activeCounter = 0;
     
   taskCardLi.append(taskCardDiv);
   document.querySelector("#activeList").append(taskCardLi)
-  return false;
+  
     
 //Preventing default submission of form 
     
