@@ -49,9 +49,8 @@ let activeCounter = 0;
   taskCardDiv.append(displayedDate);
 
   const taskCardLi = document.createElement("li");
-  taskCardLi.append(taskCardDiv);
   document.querySelector("#activeList").append(taskCardLi)
-    
+  taskCardLi.append(taskCardDiv);
     
 //Preventing default submission of form 
     return false;
