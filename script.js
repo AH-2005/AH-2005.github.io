@@ -18,9 +18,9 @@ let activeCounter = 0;
 
     //Creating a task object
     const title = document.querySelector("#titleField").value;
-    //const description = querySelector("#description").value;
-    //const date = querySelector("#dateField").value;
-    //const priority = querySelector("#priorityLevel").value;
+    const description = document.querySelector("#description").value;
+    const date = document.querySelector("#dateField").value;
+    const priority = document.querySelector("#priorityLevel").value;
   //let activeTask = {
     //title: title,
     //description: description,
@@ -28,11 +28,27 @@ let activeCounter = 0;
     //priority: priority,
     //get displayTask() {
       //return this.name;
-    //}
-console.log(title);
-  const taskCard = document.createElement("li");
-  taskCard.innerHTML = title;
-  document.querySelector("#activeList").append(taskCard)
+    //
+    
+  const taskCardLi = document.createElement("li");
+  document.querySelector("#activeList").append(taskCardLi)
+    
+  const taskCardDiv = document.createElement("div");
+  taskCardDiv.setAttribute("id", "taskCardDiv");
+  taskCardLi.append(taskCardDiv);
+
+  const displayedTitle = document.createElement("h4");
+  displayedtitle.innerHTML = title;
+  taskCardDiv.append(displayedTitle);  
+    
+  const displayedDescription = document.createElement("p");
+  displayedDescription.innerHTML = description;
+  taskCardDiv.append(displayedDescription);
+
+  const displayedDate = document.createElement("p");
+  displayedDate.innerHTML = date;
+  taskCardDiv.append(displayedDate);
+
     
   return false;
   //  document.createElement("div").innerHTML = activeTask.displayTask; 
