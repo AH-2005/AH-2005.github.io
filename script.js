@@ -30,8 +30,7 @@ let activeCounter = 0;
       //return this.name;
     //
     
-  const taskCardLi = document.createElement("li");
-  document.querySelector("#activeList").append(taskCardLi)
+
     
   const taskCardDiv = document.createElement("div");
   taskCardDiv.setAttribute("id", "taskCardDiv");
@@ -49,7 +48,10 @@ let activeCounter = 0;
   displayedDate.innerHTML = date;
   taskCardDiv.append(displayedDate);
 
-    taskCardLi.append(taskCardDiv);
+  const taskCardLi = document.createElement("li");
+  taskCardLi.append(taskCardDiv);
+  document.querySelector("#activeList").append(taskCardLi)
+    
     
 //Preventing default submission of form 
     return false;
