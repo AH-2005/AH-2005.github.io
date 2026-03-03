@@ -30,12 +30,12 @@ let activeCounter = 0;
       //return this.name;
     //
     
-return false;
+
   const taskCardLi = document.createElement("li");
   const taskCardDiv = document.createElement("div");
   taskCardDiv.setAttribute("id", "taskCardDiv");
   
-  
+  return false;
 
   const displayedTitle = document.createElement("h4");
   displayedtitle.innerHTML = title;
