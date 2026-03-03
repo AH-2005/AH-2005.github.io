@@ -17,7 +17,7 @@ let activeCounter = 0;
   document.querySelector("#form").onsubmit = function() {
 
     //Creating a task object
-    const title = querySelector("#titleField").value;
+    const title = document.querySelector("#titleField").value;
     //const description = querySelector("#description").value;
     //const date = querySelector("#dateField").value;
     //const priority = querySelector("#priorityLevel").value;
