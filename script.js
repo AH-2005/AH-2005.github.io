@@ -35,14 +35,11 @@ let activeCounter = 0;
     
   const taskCardDiv = document.createElement("div");
   taskCardDiv.setAttribute("id", "taskCardDiv");
-  taskCardLi.append(taskCardDiv);
-
   
 
   const displayedTitle = document.createElement("h4");
   displayedtitle.innerHTML = title;
   taskCardDiv.append(displayedTitle);  
-    return false;
     
   const displayedDescription = document.createElement("p");
   displayedDescription.innerHTML = description;
@@ -52,7 +49,9 @@ let activeCounter = 0;
   displayedDate.innerHTML = date;
   taskCardDiv.append(displayedDate);
 
-    
+    taskCardLi.append(taskCardDiv);
+
+    return false;
   
   //  document.createElement("div").innerHTML = activeTask.displayTask; 
   //}
