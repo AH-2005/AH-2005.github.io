@@ -29,7 +29,7 @@ let activeCounter = 0;
     //get displayTask() {
       //return this.name;
     //}
-
+console.log(title);
   const taskCard = document.createElement("li");
   taskCard.innerHTML = title;
   document.querySelector("#activeList").append(taskCard)
