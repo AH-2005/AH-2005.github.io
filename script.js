@@ -14,7 +14,7 @@ let activeTasks = [];
 let activeCounter = 0;
 
 //Adding a task
-  document.querySelector("form").onsubmit = function() {
+  document.querySelector("#addTask").onclick = function() {
 
     //Creating a task object
     const title = querySelector("#titleField").value;
@@ -54,7 +54,7 @@ let activeCounter = 0;
   }
   
 //Hiding and displaying tasks by priority
-  document.querySelector("#priority").onchange = function () {
+//  document.querySelector("#priority").onchange = function () {
     
-  }
+  //}
 })
