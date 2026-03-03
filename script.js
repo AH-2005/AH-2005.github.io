@@ -32,6 +32,8 @@ let activeCounter = 0;
     
   const taskCardLi = document.createElement("li");
   document.querySelector("#activeList").append(taskCardLi)
+
+    return false;
     
   const taskCardDiv = document.createElement("div");
   taskCardDiv.setAttribute("id", "taskCardDiv");
@@ -50,7 +52,7 @@ let activeCounter = 0;
   taskCardDiv.append(displayedDate);
 
     
-  return false;
+  
   //  document.createElement("div").innerHTML = activeTask.displayTask; 
   //}
 //let taskDiv = document.createElement("div") 
