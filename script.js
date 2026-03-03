@@ -47,13 +47,15 @@ let activeCounter = 0;
   const displayedDate = document.createElement("p");
   displayedDate.innerHTML = date;
   taskCardDiv.append(displayedDate);
-
+    
+return false;
+    
   const taskCardLi = document.createElement("li");
   document.querySelector("#activeList").append(taskCardLi)
   taskCardLi.append(taskCardDiv);
     
 //Preventing default submission of form 
-    return false;
+    
   
   //  document.createElement("div").innerHTML = activeTask.displayTask; 
   //}
