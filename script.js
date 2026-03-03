@@ -32,12 +32,12 @@ let activeCounter = 0;
     
   const taskCardLi = document.createElement("li");
   document.querySelector("#activeList").append(taskCardLi)
-
-    return false;
     
   const taskCardDiv = document.createElement("div");
   taskCardDiv.setAttribute("id", "taskCardDiv");
   taskCardLi.append(taskCardDiv);
+
+    return false;
 
   const displayedTitle = document.createElement("h4");
   displayedtitle.innerHTML = title;
