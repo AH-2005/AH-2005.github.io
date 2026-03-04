@@ -65,14 +65,23 @@ let activeCounter = 0;
   return false; 
 //Preventing default submission of form 
     
-  
+  }
   //  document.createElement("div").innerHTML = activeTask.displayTask; 
   //}
 //let taskDiv = document.createElement("div") 
    // taskDiv.append(document.createElement("p").innerText = activeTask.name)
     
 
+//Delete button
+    const deleteButton = document.createElement("button");
+    deleteButton.setAttribute("id", "deleteButton") 
+    deleteButton.innerText = "Delete";
+    taskCardDiv.append(deleteButton);
 
+    document.querySelector("#deleteButton").onclick = function taskDeletion () {
+      
+    }
+    
     
 
     //let li = document.createElement("li")
@@ -82,7 +91,7 @@ let activeCounter = 0;
     //Updating counter for active tasks
    // activeCounter++;
      //document.querySelector("#activeCounter").innerHTML = activeCounter;
-  }
+  
   
 //Hiding and displaying tasks by priority
 //  document.querySelector("#priority").onchange = function () {
