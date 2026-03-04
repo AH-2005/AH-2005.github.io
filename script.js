@@ -73,14 +73,14 @@ let activeCounter = 0;
     
 
 //Delete button
-    const deleteButton = document.createElement("button");
-    deleteButton.setAttribute("id", "deleteButton") 
-    deleteButton.innerText = "Delete";
-    taskCardDiv.append(deleteButton);
+    //const deleteButton = document.createElement("button");
+    //deleteButton.setAttribute("id", "deleteButton") 
+    //deleteButton.innerText = "Delete";
+    //taskCardDiv.append(deleteButton);
 
-    document.querySelector("#deleteButton").onclick = function taskDeletion () {
+//    document.querySelector("#deleteButton").onclick = function taskDeletion () {
       
-    }
+  //  }
     
     
 
