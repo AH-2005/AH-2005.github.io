@@ -43,10 +43,10 @@ let activeCounter = 0;
 
 
     
-  const taskCardLi = document.createElement("li");
+ // const taskCardLi = document.createElement("li");
   const taskCardDiv = document.createElement("div");
   taskCardDiv.setAttribute("id", "taskCardDiv");
-  taskCardLi.append(taskCardDiv);
+  //taskCardLi.append(taskCardDiv);
   
   
   const displayedTitle = document.createElement("h4");
@@ -58,8 +58,12 @@ let activeCounter = 0;
   const displayedDate = document.createElement("p");
   displayedDate.innerHTML = date;
       
-  taskCardDiv.append(displayedTitle, displayedDescription, displayedDate);
-    
+//  taskCardDiv.append(displayedTitle, displayedDescription, displayedDate);
+    const docFrag = document.createDocumentFragment()
+taskCardDiv.append(displayedTitle, displayedDescription, displayedDate)
+
+docFrag.append(taskCardDiv)
+
   document.querySelector("#activeList").append(taskCardLi);
   
   return false; 
