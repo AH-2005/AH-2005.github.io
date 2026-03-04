@@ -44,8 +44,7 @@ let activeCounter = 0;
 
     
  // const taskCardLi = document.createElement("li");
-  const taskCardDiv = document.createElement("div");
-  taskCardDiv.setAttribute("id", "taskCardDiv");
+  
   //taskCardLi.append(taskCardDiv);
   
   
@@ -58,15 +57,20 @@ let activeCounter = 0;
   const displayedDate = document.createElement("p");
   displayedDate.innerHTML = date;
       
-//  taskCardDiv.append(displayedTitle, displayedDescription, displayedDate);
-    const docFrag = document.createDocumentFragment()
-taskCardDiv.append(displayedTitle, displayedDescription, displayedDate)
+//  
+    const taskCardDiv = document.createElement("div");
+    taskCardDiv.setAttribute("id", "taskCardDiv");
+    taskCardDiv.append(displayedTitle, displayedDescription, displayedDate);
+    const docFrag = document.createDocumentFragment();
+    document.querySelector("#activeList").append(taskCardDiv);
+    return false;
+//taskCardDiv.append(displayedTitle, displayedDescription, displayedDate)
 
-docFrag.append(taskCardDiv)
+//docFrag.append(taskCardDiv)
 
-  document.querySelector("#activeList").append(taskCardLi);
+//  document.querySelector("#activeList").append(taskCardLi);
   
-  return false; 
+//  return false; 
 //Preventing default submission of form 
     
   }
