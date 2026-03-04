@@ -30,32 +30,39 @@ let activeCounter = 0;
       //return this.name;
     //
     
+    //create an li
+    //create a div 
+    //create elements 
+    //append elements to div 
+    //append div to li 
+    //return false - prevents reload of page 
+    //reload of page is triggered immediately after submit is pressed 
+    //append li to ul - task is displayed - immediately after submit is pressed 
+  
+//return false 
 
+
+    
   const taskCardLi = document.createElement("li");
   const taskCardDiv = document.createElement("div");
   taskCardDiv.setAttribute("id", "taskCardDiv");
+  taskCardLi.append(taskCardDiv);
   
-  return false;
-
+  
   const displayedTitle = document.createElement("h4");
   displayedtitle.innerHTML = title;
-  taskCardDiv.append(displayedTitle);  
   
-    
   const displayedDescription = document.createElement("p");
   displayedDescription.innerHTML = description;
-  taskCardDiv.append(displayedDescription);
 
   const displayedDate = document.createElement("p");
   displayedDate.innerHTML = date;
-  taskCardDiv.append(displayedDate);
+      
+  taskCardDiv.append(displayedTitle, displayedDescription, displayedDate);
     
-
-    
-  taskCardLi.append(taskCardDiv);
-  document.querySelector("#activeList").append(taskCardLi)
+  document.querySelector("#activeList").append(taskCardLi);
   
-    
+  return false; 
 //Preventing default submission of form 
     
   
