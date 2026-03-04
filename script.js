@@ -62,7 +62,8 @@ let activeCounter = 0;
     taskCardDiv.setAttribute("id", "taskCardDiv");
     taskCardDiv.append(displayedTitle, displayedDescription, displayedDate);
     const docFrag = document.createDocumentFragment();
-    document.querySelector("#activeList").append(taskCardDiv);
+    docFrag.append(taskCardDiv);
+    document.querySelector("#activeList").append(docFrag);
     return false;
 //taskCardDiv.append(displayedTitle, displayedDescription, displayedDate)
 
