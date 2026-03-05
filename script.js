@@ -15,7 +15,6 @@ let activeCounter = 0;
 
 //Adding a task
   document.querySelector("form").onsubmit = function() {
-return false;
     //Creating a task object
     const title = document.querySelector("#titleField").value;
     const description = document.querySelector("#description").value;
@@ -68,7 +67,7 @@ taskCardDiv.append(displayedTitle, displayedDescription, displayedDate)
 //add task to body after #activeList   
 
 const activeHeading = document.querySelector("#activeList")
-
+return false; 
 activeHeading.after(taskCardDiv)
    // const docFrag = document.createDocumentFragment();
     //docFrag.append(taskCardDiv);
