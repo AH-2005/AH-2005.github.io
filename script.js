@@ -62,7 +62,7 @@ let activeCounter = 0;
     // create a task div
 taskCardDiv.setAttribute("id", "activeTask") 
 // fill task div with title, description, date, delete button & mark complete button
-taskCardDiv.append(displayedTitle, displayedDescription, displayedDate)
+taskCardDiv.append(displayedTitle)
 
 //add task to body after #activeList   
 
