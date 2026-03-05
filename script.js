@@ -68,7 +68,7 @@ return false;
 
 const activeHeading = document.querySelector("#activeList")
 
-activeHeading.after(taskCardDiv)
+activeHeading.append(taskCardDiv)
    // const docFrag = document.createDocumentFragment();
     //docFrag.append(taskCardDiv);
     //document.querySelector("#activeList").append(docFrag);
