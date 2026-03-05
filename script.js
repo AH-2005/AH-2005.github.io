@@ -63,7 +63,7 @@ let activeCounter = 0;
 taskCardDiv.setAttribute("id", "activeTask") 
 // fill task div with title, description, date, delete button & mark complete button
 taskCardDiv.append(displayedTitle, displayedDescription, displayedDate)
-return false;
+
 //add task to body after #activeList   
 
 const activeHeading = document.querySelector("#activeList")
@@ -72,7 +72,7 @@ activeHeading.append(taskCardDiv)
    // const docFrag = document.createDocumentFragment();
     //docFrag.append(taskCardDiv);
     //document.querySelector("#activeList").append(docFrag);
-    
+    return false;
 //taskCardDiv.append(displayedTitle, displayedDescription, displayedDate)
 
 //docFrag.append(taskCardDiv)
