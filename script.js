@@ -34,25 +34,32 @@ let activeCounter = 0;
   
   
   const displayedTitle = document.createElement("h4");
-  displayedtitle.innerHTML = title;
+  
   
   const displayedDescription = document.createElement("p");
-  displayedDescription.innerHTML = description;
+  
 
   const displayedDate = document.createElement("p");
+    
+  const taskCardDiv = document.createElement("div");
+    
+    taskCardDiv.append(displayedTitle, displayedDescription, dsplayedDate)
+    displayedtitle.innerHTML = title;
+    displayedDescription.innerHTML = description;
   displayedDate.innerHTML = date;
-      return false 
+
+    
 //  
-    const taskCardDiv = document.createElement("div");
+    
     // create a task div
-    taskCardDiv.setAttribute("id", "activeTask") 
+  //  taskCardDiv.setAttribute("id", "activeTask") 
 // fill task div with title, description, date, delete button & mark complete button
-    taskCardDiv.append(displayedTitle,displayedDescription, dsplayedDate)
+    
 
 //add task to body after #activeList   
 
 document.querySelector("#activeList").append(taskCardDiv);
-
+return false;
 }
    // const docFrag = document.createDocumentFragment();
     //docFrag.append(taskCardDiv);
