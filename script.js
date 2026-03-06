@@ -67,12 +67,12 @@ taskCardDiv.append(displayedTitle)
 //add task to body after #activeList   
 
 const activeHeading = document.querySelector("#activeList")
-
+return false
 activeHeading.append(taskCardDiv)
    // const docFrag = document.createDocumentFragment();
     //docFrag.append(taskCardDiv);
     //document.querySelector("#activeList").append(docFrag);
-    return false;
+    
 //taskCardDiv.append(displayedTitle, displayedDescription, displayedDate)
 
 //docFrag.append(taskCardDiv)
