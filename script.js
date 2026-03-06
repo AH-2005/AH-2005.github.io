@@ -27,24 +27,10 @@ let activeCounter = 0;
     //priority: priority,
     //get displayTask() {
       //return this.name;
-    //
-    
-    //create an li
-    //create a div 
-    //create elements 
-    //append elements to div 
-    //append div to li 
-    //return false - prevents reload of page 
-    //reload of page is triggered immediately after submit is pressed 
-    //append li to ul - task is displayed - immediately after submit is pressed 
-  
-//return false 
-
-
-    
+  }
+ 
  // const taskCardLi = document.createElement("li");
-  
-  //taskCardLi.append(taskCardDiv);
+    //taskCardLi.append(taskCardDiv);
   
   
   const displayedTitle = document.createElement("h4");
@@ -58,35 +44,26 @@ let activeCounter = 0;
       
 //  
     const taskCardDiv = document.createElement("div");
-    //taskCardDiv.setAttribute("id", "taskCardDiv")
     // create a task div
-taskCardDiv.setAttribute("id", "activeTask") 
+    taskCardDiv.setAttribute("id", "activeTask") 
 // fill task div with title, description, date, delete button & mark complete button
-taskCardDiv.append(displayedTitle)
+    taskCardDiv.append(displayedTitle,displayedDescription, dsplayedDate)
 
 //add task to body after #activeList   
 
-const activeHeading = document.querySelector("#activeList")
-return false
-activeHeading.append(taskCardDiv)
+document.querySelector("#activeList").append(taskCardDiv);
+return false;
+}
    // const docFrag = document.createDocumentFragment();
     //docFrag.append(taskCardDiv);
     //document.querySelector("#activeList").append(docFrag);
     
-//taskCardDiv.append(displayedTitle, displayedDescription, displayedDate)
-
 //docFrag.append(taskCardDiv)
 
 //  document.querySelector("#activeList").append(taskCardLi);
-  
-//  return false; 
 //Preventing default submission of form 
     
-  }
   //  document.createElement("div").innerHTML = activeTask.displayTask; 
-  //}
-//let taskDiv = document.createElement("div") 
-   // taskDiv.append(document.createElement("p").innerText = activeTask.name)
     
 
 //Delete button
