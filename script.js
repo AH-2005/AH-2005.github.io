@@ -27,7 +27,7 @@ let activeCounter = 0;
     //priority: priority,
     //get displayTask() {
       //return this.name;
-  }
+  
  
  // const taskCardLi = document.createElement("li");
     //taskCardLi.append(taskCardDiv);
@@ -41,7 +41,7 @@ let activeCounter = 0;
 
   const displayedDate = document.createElement("p");
   displayedDate.innerHTML = date;
-      
+      return false 
 //  
     const taskCardDiv = document.createElement("div");
     // create a task div
@@ -52,7 +52,7 @@ let activeCounter = 0;
 //add task to body after #activeList   
 
 document.querySelector("#activeList").append(taskCardDiv);
-return false;
+
 }
    // const docFrag = document.createDocumentFragment();
     //docFrag.append(taskCardDiv);
